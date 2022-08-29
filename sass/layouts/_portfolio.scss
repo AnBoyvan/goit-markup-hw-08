@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .filter-btn {
@@ -99,6 +99,11 @@
 @media screen and (min-width: 768px) {
   .filter-list {
     justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .filter-btn {
+    margin-bottom: 0;
   }
 
   .projects-list {
@@ -127,5 +132,9 @@
 @media screen and (min-width: 1200px) {
   .projects-list-item {
     max-width: 370px;
+  }
+
+  .filter-list {
+    margin-bottom: 50px;
   }
 }

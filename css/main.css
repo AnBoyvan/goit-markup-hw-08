@@ -175,6 +175,11 @@ body {
   width: 40px;
 }
 
+.mobile-menu__close-icon {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
 .mobile-nav__element {
   font-weight: 500;
   font-size: 40px;
@@ -474,10 +479,16 @@ header {
 }
 
 .features-description {
+  font-size: 14px;
   line-height: 1.71;
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .features {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
@@ -488,8 +499,10 @@ header {
     width: 354px;
   }
   .features-description {
-    line-height: 1.71;
     margin-bottom: 0px;
+  }
+  .features-description-title {
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -654,7 +667,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .filter-btn {
@@ -745,6 +758,10 @@ header {
 @media screen and (min-width: 768px) {
   .filter-list {
     justify-content: center;
+    margin-bottom: 40px;
+  }
+  .filter-btn {
+    margin-bottom: 0;
   }
   .projects-list {
     display: flex;
@@ -768,6 +785,9 @@ header {
 @media screen and (min-width: 1200px) {
   .projects-list-item {
     max-width: 370px;
+  }
+  .filter-list {
+    margin-bottom: 50px;
   }
 }
 footer {

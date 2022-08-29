@@ -20,8 +20,15 @@
 }
 
 .features-description {
+  font-size: 14px;
   line-height: 1.71;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -36,8 +43,11 @@
   }
 
   .features-description {
-    line-height: 1.71;
     margin-bottom: 0px;
+  }
+
+  .features-description-title {
+    text-align: left;
   }
 }
 
